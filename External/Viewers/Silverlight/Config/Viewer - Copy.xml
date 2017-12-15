@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration Version="1.5">
+  <Libraries Default="Core">
+    <Library Id="TempestTest" 
+    	AssemblyName="Geocortex.Projects.CoLG.Tempest.SilverlightViewer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=46831d89f96ec1e7" 
+    	ClassNameTemplate="Geocortex.Projects.CoLG.TempestConnector.Modules.{_ModuleName}.{_ModuleName}{_Type}" 
+    	Uri="http://col-gis.col.local/Geocortex/Essentials/REST/sites/Internal/viewers/Silverlight/VirtualDirectory/ClientBin/Geocortex.Projects.CoLG.Tempest.SilverlightViewer.xap" />
+  </Libraries>
+  <Modules>
+    <Tempest LibraryId="TempestTest">
+      <Configuration>
+        <TempestSessionIdName>tempest_wi_sessionid</TempestSessionIdName>
+        <!-- Buffer is in map units-->
+        <TempestSelectionBuffer>50</TempestSelectionBuffer>
+        <TempestToEssentialsWorkflowId>TempestToEssentials</TempestToEssentialsWorkflowId>
+        <EssentialsToTempestWorkflowId>EssentialsToTempest</EssentialsToTempestWorkflowId>
+        <TempestApplicationName>Geocortex Silverlight Tempest Connector</TempestApplicationName>
+        <ParcelMapserviceId>0</ParcelMapserviceId>
+      </Configuration>
+    </Tempest>
+    <Workflow>
+      <Configuration>
+        <RunAtStartup>
+          <Workflow Id="TempestToEssentials" />
+        </RunAtStartup>
+        <WorkflowContainers />
+      </Configuration>
+    </Workflow>
+  </Modules>
+  <Resources />
+</Configuration>

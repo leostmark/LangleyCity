@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration Version="1.9">
+  <Globals xmlns="http://www.geocortex.com/Viewer/Configuration/PreProcessor">
+    <SiteUri Value="{ViewerConfigUri}../../../.." />
+    <ApplicationTitle Value="City of Langley Interactive Map" />
+    <BrowserTitle Value="City of Langley Interactive Map" />
+    <BannerShow Value="True" />
+    <BannerLeftImageUri Value="{ViewerConfigUri}../Resources/Images/BackgroundRepeat.png" />
+    <BannerRightImageUri Value="" />
+    <BannerBackgroundImageUri Value="{ViewerConfigUri}../Resources/Images/BackgroundRepeat.png" />
+    <GeometryServiceUri Value="http://sampleserver3.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer" />
+    <ToolbarOpenByDefault Value="False" />
+    <DataFrameOpenByDefault Value="False" />
+    <OverviewMapShow Value="True" />
+    <OverviewMapOpenByDefault Value="False" />
+    <OverviewMapMode Value="Dynamic" />
+    <ShellFlowDirection Value="LeftToRight" />
+    <DataFramePosition Value="Left" />
+    <MapTipsEnabled Value="True" />
+    <OptimizerEnabled Value="False" />
+    <OptimizerUserName Value="DefaultUser" />
+    <OptimizerDataRelayUri Value="http://localhost/Geocortex/Optimizer/Rest/DataRelay/LogData.ashx?f=json" />
+    <ManagedViewerDefaultsXml Value="" />
+    <HomePanelIconUri Value="{ViewerConfigUri}../Resources/Images/house-32.png" />
+    <AttributeEditing Value="False" />
+    <OverviewMapExtentScaleFactor Value="2" />
+    <DataFrameResizable Value="True" />
+    <DataFrameMinWidth Value="360" />
+    <DataFrameMaxWidth Value="650" />
+    <DataFrameDefaultWidth Value="360" />
+    <ScaleBarShow Value="True" />
+    <ScaleSliderShow Value="True" />
+    <BaseMapControlShow Value="True" />
+    <ProgressIndicatorShow Value="True" />
+    <ProjectCategory Value="Common" />
+    <ProjectCanSaveToServer Value="True" />
+    <ProjectCanSaveToClient Value="True" />
+    <BufferingProjectionWkid Value="" />
+    <BufferingProjectionWkt Value="" />
+    <IdentifyPixelTolerance Value="2" />
+    <IdentifyVisibleLayersOnly Value="True" />
+    <IdentifyVisibleAtCurrentScaleOnly Value="True" />
+    <MeasurementUnitDefault Value="meters" />
+    <MeasurementAreaUnitDefault Value="squareMeters" />
+    <MeasurementOverrideUnits Value="" />
+    <MeasurementPredictionEnabled Value="True" />
+    <MeasurementProjectionWkid Value="" />
+    <MeasurementProjectionUnits Value="meters" />
+    <ResultsViewRegion Value="DataRegion" />
+    <ResultsViewMode Value="List" />
+    <MapTipsDisplayOnClick Value="True" />
+    <MapTipsIgnorePixelToleranceForPolygons Value="False" />
+    <DefaultFeatureDetailsTab Value="DataLinks" />
+    <BookmarksShow Value="True" />
+    <MouseCoordinatesShow Value="True" />
+    <StickyTools Value="True" />
+    <WatermarkImageIsVisible Value="False" />
+    <WatermarkImageUrl Value="" />
+    <WatermarkImageMode Value="Scaled" />
+    <WatermarkImageOpacity Value="0.25" />
+    <HighlightDynamicSnappingLayers Value="False" />
+    <TimeAwareSliderShow Value="True" />
+    <TimeAwareSliderConfiguration xmlns="">
+      <Configuration TimeMode="TimeExtent" Loop="True" PlaySpeed="1" NumberOfIntervals="10" UserConfigurable="True" UsePrimaryTimeAwareMapService="True" />
+    </TimeAwareSliderConfiguration>
+    <ExportMapAllowIncludingGeoreferenceData Value="True" />
+    <HomePanelIsVisible Value="False" />
+    <HomePanelCanClose Value="True" />
+    <HomePanelTitle Value="Home" />
+    <HomePanelContent><![CDATA[
+      <p style="text-align: center;">[Application information and actions here]</p>
+      <br/>
+      
+      <p><em>Use this region to welcome users, make objectives of the application clear, and provide efficient access to important functions and workflows.</em></p>
+    ]]></HomePanelContent>
+  </Globals>
+  <ExternalConfigs>
+    <ExternalConfig Uri="../../../../../../Templates/SilverlightViewer_1_9/VirtualDirectory/Viewer.Defaults.xml" />
+  </ExternalConfigs>
+  <Modules>
+    <Toolbar>
+      <Views>
+        <View Id="ToolbarView" Region="ToolbarRegion" Visible="false" AssociatedHelpTopicKey="Toolbar" />
+      </Views>
+      <Configuration>
+        <Toolbar StickyTools="True">
+          {Insert__Toolbar-Tabs}
+        <Tab DisplayName="Getting Around">
+            {Insert__Toolbar-GettingAround}
+            <Group DisplayName="Map Layers"><Button Name="Show Layers" Command="SwitchToLayerView" ImageUri="/Resources/Images/Layers.png" ToolTip="Show layer list" /></Group><Group DisplayName="Navigation Tools"><Tool Name="Pan" DisplayName="Pan" DrawMode="None" ImageUri="/Resources/Images/Pan.png" ToolTip="Pan" HelpText="Drag the map around to pan." /><Tool Name="ZoomIn" DisplayName="Zoom In" DrawMode="Rectangle" Command="ZoomInToExtent" ImageUri="/Resources/Images/ZoomIn.png" ToolTip="Zoom in" HelpText="Drag a rectangle or click the map to zoom in. A large rectangle zooms less. A small rectangle zooms more. To reverse zoom, hold CTRL." /><Tool Name="ZoomOut" DisplayName="Zoom Out" DrawMode="Rectangle" Command="ZoomOutToExtent" ImageUri="/Resources/Images/ZoomOut.png" ToolTip="Zoom out" HelpText="Drag a rectangle or click the map to zoom out. A large rectangle zooms less. A small rectangle zooms more. To reverse zoom, hold CTRL." /><Button Name="Initial Extent" Command="ZoomToInitialExtent" ImageUri="/Resources/Images/ZoomInitial.png" ToolTip="Zoom to initial extent" /><Button Name="Full Extent" Command="ZoomToFullExtent" ImageUri="/Resources/Images/ZoomFullExtent.png" ToolTip="Zoom to full extent" /><Button Name="Previous Extent" Command="ZoomToPreviousExtent" ImageUri="/Resources/Images/ExtentPrevious.png" ToolTip="Zoom to previous extent" /><Button Name="Next Extent" Command="ZoomToNextExtent" ImageUri="/Resources/Images/ExtentNext.png" ToolTip="Zoom to next extent" /></Group><Group DisplayName="Location Info"><Tool Name="PointIdentify" DisplayName="Point Identify" ToolTip="Identify (Point)" DrawMode="Point" Command="Identify" ImageUri="/Resources/Images/Identify.png" HelpText="Click on the map to identify features at that point. Select from the Layers drop-down list to change which layers display." /></Group><Group DisplayName="Information &amp; Actions"><Region RegionName="AdvancedControlsRegion" /></Group><Group DisplayName="Map Tips"><Region RegionName="MapTipsRegion" /></Group><Group DisplayName="External Mapping">
+              {Insert__Toolbar-MapsAndDataSources-ExternalMapping-Items}
+            <Button DisplayName="Bing™ Maps" Command="OpenWebPage" CommandParameter="../WMI/BingMaps.html" ImageUri="/Resources/Images/MapBlue.png" ToolTip="View the current location in Bing Maps / Birdseye" /><Button DisplayName="Google Maps™" Command="OpenWebPage" CommandParameter="../WMI/GoogleMaps.html" ImageUri="/Resources/Images/MapGreen.png" ToolTip="View the current location in Google Maps / Street View" Name="Google Maps" /></Group><Group DisplayName="Help"><Button Name="LaunchDefaultHelp" DisplayName="Help" Command="ShowHelpTopic" CommandParameter="" ImageUri="/Resources/Images/Help.png" ToolTip="Show help topics" /><Button Name="ClickForHelp" DisplayName="What's This?" Command="InvokeClickHelp" ImageUri="/Resources/Images/HelpClickCursor.png" ToolTip="Enable click help" /></Group></Tab><Tab DisplayName="Search, Print and Draw">
+            {Insert__Toolbar-Tasks-Groups}
+          <Group DisplayName="Searching"><Button DisplayName="Property address" ToolTip="Search for a property parcel by its address" Name="SearchParcel" Command="RunWorkflowById" CommandParameter="SearchParcelsAddr" ImageUri="{ViewerConfigUri}../Resources/Images/SearchAddress.png" /></Group><Group DisplayName="Printing"><Button Name="Print Map" Command="PrintMap" ImageUri="/Resources/Images/Print.png" ToolTip="Print a map" /></Group><Group DisplayName="Results"><Button Name="View Results" Command="SwitchToResultsView" ImageUri="/Resources/Images/Search.png" ToolTip="View current search results" /><Button Name="View Selected" Command="SwitchToSelectionView" ImageUri="/Resources/Images/Star32x32.png" ToolTip="View selected features" /></Group><Group DisplayName="Drawing Tools">
+              {Insert__Toolbar-Drawing-ToolbarItems}
+            <Region RegionName="DrawingToolsRegion" /></Group></Tab><Tab DisplayName="Identify and Measure"><Group DisplayName="Location Information"><Region RegionName="IdentifyRegion" /></Group><Group DisplayName="Measurement Tools"><Region RegionName="MeasurementToolsRegion" /></Group><Group DisplayName="Coordinate Tools"><Region RegionName="CoordinateToolsRegion" /></Group></Tab></Toolbar>
+      </Configuration>
+    </Toolbar>
+    <IWantToMenu>
+      <Views>
+        <View Region="TopLeftMapRegion" Type="Geocortex.EssentialsSilverlightViewer.CoreModules.IWantToMenu.MenuFloatingView" AssociatedHelpTopicKey="IWantToMenu" />
+      </Views>
+      <Configuration>
+        <MenuRef MenuId="IWantTo" />
+        <Menus>
+          <Menu Id="IWantTo" Title="I want to...">
+            <Items>
+              {Insert__Menus-IWantTo-Items}
+            <Item Text="Open map layer list" ImageUri="/Resources/Images/Layers.png" Description="Open the layer list to modify layer visibilities."><Batch><BatchItem Command="SwitchToLayerView" /><BatchItem Command="OpenDataFrame" /></Batch></Item><Item Text="Show/hide advanced toolbar" Command="ToggleAdvancedTools" ImageUri="/Resources/Images/Tools.png" Description="Toggle the Advanced toolbar." /><Item Command="RunWorkflowById" CommandParameter="SearchParcelsAddr" Description="Search for a property by address" ImageUri="{ViewerConfigUri}../Resources/Images/SearchAddress.png" Text="Search for a property by address" /><Item Text="Create a printable map" Command="PrintMap" ImageUri="/Resources/Images/Print.png" Description="Create a printable map." /><Item Text="Measure distance" ImageUri="/Resources/Images/MeasureDistance.png" Description="Measure length using a polyline tool."><Batch><BatchItem Command="ShowAdvancedTools" /><BatchItem Command="SetCurrentTab" CommandParameter="Identify and Measure" /><BatchItem Command="ActivateTool" CommandParameter="MeasureDistance" /></Batch></Item><Item Text="Draw on the map" ImageUri="/Resources/Images/MarkupFreehand.png" Description="Draw freehand on the map surface."><Batch><BatchItem Command="ShowAdvancedTools" /><BatchItem Command="SetCurrentTab" CommandParameter="Tasks" /><BatchItem Command="ActivateTool" CommandParameter="MarkupFreehand" /></Batch></Item><Item Text="Return to initial map extent" ImageUri="/Resources/Images/ZoomInitial.png" Command="ZoomToInitialExtent" Description="Zoom to the initial extent of the map." /><Item Text="View selected" Command="SwitchToSelectionView" ImageUri="/Resources/Images/Star32x32.png" Description="View selected features." /><Item Text="View results" Command="SwitchToResultsView" ImageUri="/Resources/Images/Search.png" Description="View the most recent search results." /><Item Text="Share current map" ImageUri="/Resources/Images/Share-Map.png" Command="CaptureViewerState" Description="Share your current view of the map with someone." /></Items>
+          </Menu>
+        </Menus>
+      </Configuration>
+    </IWantToMenu>
+    <Workflow>
+      <Configuration>
+        <RunAtStartup>
+          <!--<Workflow Id="YourWorkflowId" />-->
+          {Insert__Workflow_RunAtStartup_Workflows}
+        <Workflow Id="Disclaimer" /></RunAtStartup>
+        <WorkflowContainers DefaultTitle="Workflow" DefaultRegion="DataRegion" DefaultIconUri="/Resources/Images/Form.png">
+          <WorkflowContainer Name="Default" Title="Workflow" RegionName="DataRegion" IconUri="/Resources/Images/Form.png" />
+          <WorkflowContainer Name="Extract" Title="Extract Data" RegionName="DataRegion" IconUri="/Resources/Images/LayersExtract.png" />
+          <WorkflowContainer Name="ModalWindow" Title="Workflow" RegionName="ModalWindowRegion" />
+          <WorkflowContainer Name="ModalWindowNoCloseButton" Title="Workflow" RegionName="ModalWindowNoCloseButtonRegion" />
+        </WorkflowContainers>
+      </Configuration>
+    </Workflow>
+  </Modules>
+  <Resources>
+    <Xaml Uri="{ViewerConfigUri}../../../../../Internal/Viewers/Silverlight/VirtualDirectory/Themes/Langley_Blue_Theme.xaml" />
+  </Resources>
+  <Libraries Default="Core">
+  </Libraries>
+</Configuration>

@@ -1,0 +1,35 @@
+﻿<Activity mc:Ignorable="sap sads" x:Class="{x:Null}" sap:VirtualizedContainerService.HintSize="274,450" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:eac="clr-namespace:ESRI.ArcGIS.Client;assembly=ESRI.ArcGIS.Client"
+ xmlns:eacg="clr-namespace:ESRI.ArcGIS.Client.Geometry;assembly=ESRI.ArcGIS.Client"
+ xmlns:eact="clr-namespace:ESRI.ArcGIS.Client.Tasks;assembly=ESRI.ArcGIS.Client"
+ xmlns:gce="clr-namespace:Geocortex.Core.Extensions;assembly=Geocortex.Core"
+ xmlns:gfc="clr-namespace:Geocortex.Forms.Client;assembly=Geocortex.EssentialsWpfApi"
+ xmlns:gfci="clr-namespace:Geocortex.Forms.Client.Items;assembly=Geocortex.EssentialsWpfApi"
+ xmlns:gr="clr-namespace:Geocortex.Reporting;assembly=Geocortex.Reporting"
+ xmlns:gwa="clr-namespace:Geocortex.Workflow.Activities;assembly=Geocortex.Workflow"
+ xmlns:gwa1="clr-namespace:Geocortex.Workflow.Activities;assembly=Geocortex.Workflow.Activities"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
+ xmlns:s="clr-namespace:System;assembly=System.Core"
+ xmlns:s1="clr-namespace:System;assembly=System"
+ xmlns:s2="clr-namespace:System;assembly=mscorlib"
+ xmlns:sa="clr-namespace:System.Activities;assembly=System.Activities"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:sl="clr-namespace:System.Linq;assembly=System.Core"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Sequence sap:VirtualizedContainerService.HintSize="234,210" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="Disclaimer and Terms of Use" Name="Disclaimer" />
+      <Variable x:TypeArguments="x:String" Default="The information supplied on the City of Langley Interactive Map is delivered as a public service by the City of Langley on an “as is, where is” basis.  The City assumes no obligation or liability for the use of the Interactive Map by any person and makes no representations or promises regarding the completeness or accuracy of the Interactive Map or its fitness for a particular purpose.  The Interactive Map represents a one-time capture of information as it exists at the time the information is transferred to the Interactive Map and does not necessarily include the ongoing updates or corrections to the source database maintained by the City or other agencies and included for the City's internal purposes.&#xD;&#xA;&#xD;&#xA;Lot sizes, legal descriptions and encumbrances must be confirmed at the Land Title Office. All as-built utility information must be confirmed with signed and sealed P. Eng. drawings.&#xD;&#xA;&#xD;&#xA;The User will use the Interactive Map only for the User's own internal business and personal purposes and may not re-sell, sublicense, or operate a service bureau using the Interactive Map, or otherwise reproduce, publish or disseminate the Interactive Map for commercial purposes, without the prior written consent of the City of Langley. All right, title and interest (including all copyright, patent, and other intellectual property rights) in the Interactive Map remain vested in the City at all times. The City's original copyright and other proprietary notices included with the Interactive Map must remain intact at all times.&#xD;&#xA;&#xD;&#xA;The User now indemnifies the City and its officials, employees and agents from and against all losses, claims, demands, actions, payments, expenses, costs, suits, and damages (including any damages that are direct, indirect, incidental, special or consequential), whether or not caused by the negligence of the City, or its officials, employees or agents, which are incurred by the City and would not or could not have been incurred but for the User's use of the Interactive Map or the User's breach of these Terms of Use." Name="Text" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <gwa1:Alert sap:VirtualizedContainerService.HintSize="212,86" Text="[Text]" Title="[Disclaimer]" />
+  </Sequence>
+</Activity>

@@ -1,0 +1,970 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Site xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Description="City of Langley Internal Web Mapping Application" DisplayName="Internal" ID="Internal">
+  <DataConnections>
+    <DataConnection ConnectionString="Data Source=COL-SQL2;Initial Catalog=TempestLive;Integrated Security=False;User ID=TEMPESTWEB;Password=MAUdib11" DisplayName="TempestLive" ErrorAction="LogDebug" ID="0" ProviderName="System.Data.SqlClient" SqlDialect="MsSqlServer" VerifyConnectionOnStartup="false" />
+  </DataConnections>
+  <Map FullExtent="522214.146380265,5436204.54618598,527494.620386838,5440651.26113888" InitialExtent="523024.803,5436454.497,526580.671,5440557.422">
+    <LayerThemes AllowDefault="true" DefaultThemeDisplayName="All Available Layers">
+      <Items>
+        <LayerTheme DisplayName="Utilities" ID="0" />
+        <LayerTheme DisplayName="Parks and Environment" ID="1" />
+        <LayerTheme DisplayName="Planning" ID="2" />
+        <LayerTheme DisplayName="Air Photo" ID="3" />
+      </Items>
+    </LayerThemes>
+    <MapServices>
+      <MapService ConnectionString="url=http://col-gis.col.local:6080/arcgis/rest/services/Maps/Internal/MapServer" DefaultAllowSymbolization="true" DisplayName="City of Langley Layers" FailureAction="Warn" Function="Operational" ID="0" IncludeInLayerList="true" IsExpanded="true" Opacity="1" OverrideTemporalSettings="false" PasswordEncrypted="false" ProviderInvariantName="Geocortex.Gis.Services.ArcGisServer.Rest" QueryProviderName="Default" SearchNonTextFields="true" SupportedImageHeight="0" SupportedImageWidth="0" UseHttpAuthentication="false" Visible="true">
+        <Layers>
+          <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="WATER UTILITY" NativeID="0" Visible="false">
+            <SubLayers>
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Water Services" NativeID="1" Visible="true">
+                <SubLayers>
+                  <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="false" IncludeInLegend="false" IsCatalogLayer="false" Name="Service Text" NativeID="2" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                    <ThemeSettings>
+                      <ThemeSetting ID="0" />
+                    </ThemeSettings>
+                  </Layer>
+                  <Layer CanCopyFeature="true" FeatureDescription="Water Service Lines and Dimensions" FeatureLabel="Water Service Lines" FeatureLongDescription="Water Service Lines and Dimensions" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Service Lines" NativeID="4" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                    <ThemeSettings>
+                      <ThemeSetting ID="0" />
+                    </ThemeSettings>
+                  </Layer>
+                </SubLayers>
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </GroupLayer>
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Main Offsets" NativeID="5" Visible="true">
+                <SubLayers>
+                  <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="false" IncludeInLegend="false" IsCatalogLayer="false" Name="Offset Text" NativeID="6" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                    <ThemeSettings>
+                      <ThemeSetting ID="0" />
+                    </ThemeSettings>
+                  </Layer>
+                  <Layer CanCopyFeature="true" FeatureDescription="Water Offset Lines and Dimensions" FeatureLabel="Water Offset Lines" FeatureLongDescription="Water Offset Lines and Dimensions" Identifiable="false" IncludeInLayerList="false" IncludeInLegend="false" IsCatalogLayer="false" Name="Offset Lines" NativeID="8" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                    <ThemeSettings>
+                      <ThemeSetting ID="0" />
+                    </ThemeSettings>
+                  </Layer>
+                </SubLayers>
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </GroupLayer>
+              <Layer CanCopyFeature="true" FeatureDescription="Water Test Stations" FeatureLabel="Water Test Station {GIS_LINK}" FeatureLongDescription="Water Test Stations" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Test Stations" NativeID="9" Queryable="true" Searchable="true" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" FeatureDescription="Water Reservoir" FeatureLabel="Water Reservoir" FeatureLongDescription="Water Reservoir" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Reservoir" NativeID="10" Queryable="false" Searchable="true" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" FeatureDescription="Fire Hydrant" FeatureLabel="Fire Hydrant" FeatureLongDescription="Fire Hydrant" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Fire Hydrants" NativeID="11" Queryable="true" Searchable="true" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" FeatureDescription="{NODE_TYPE}" FeatureLabel="{NODE_TYPE} {GIS_LINK}" FeatureLongDescription="{NODE_TYPE}" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Water Nodes" NativeID="12" Queryable="true" Searchable="true" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Pressure Zone" NativeID="13" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </Layer>
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Water Mains" NativeID="14" Visible="true">
+                <SubLayers>
+                  <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="false" IncludeInLegend="false" IsCatalogLayer="false" Name="Water Main Sizes" NativeID="15" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                    <ThemeSettings>
+                      <ThemeSetting ID="0" />
+                    </ThemeSettings>
+                  </Layer>
+                  <Layer CanCopyFeature="true" FeatureDescription="{DIAMETER} {MATERIAL} Water Main" FeatureLabel="{DIAMETER} {MATERIAL} Water Main" FeatureLongDescription="{DIAMETER} {MATERIAL} Water Main" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Water Mains" NativeID="17" Queryable="true" Searchable="true" ShowLabels="true" ShowMapTips="true" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="false" UnconfiguredFieldsCanSymbolizeUniqueValue="false" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                    <FeatureHyperlinks>
+                      <FeatureHyperlink EncodeUriReplacementValues="Automatic" Target="_blank" Text="{DIAMETER} {MATERIAL} Water Main" ToolTip="View drawing for {DIAMETER} {MATERIAL} water main" Uri="http://col-gis.col.local/WaterMains/{ASBUILT_NUMBER}.tif" />
+                    </FeatureHyperlinks>
+                    <Fields>
+                      <Field CanSymbolizeClassBreaks="false" CanSymbolizeUniqueValue="false" FocusField="false" Name="OBJECTID" Searchable="true" Visible="true" />
+                      <Field CanSymbolizeClassBreaks="false" CanSymbolizeUniqueValue="false" FocusField="false" Name="DIAMETER" Searchable="true" Visible="true" />
+                      <Field CanSymbolizeClassBreaks="false" CanSymbolizeUniqueValue="false" FocusField="false" Name="MATERIAL" Searchable="true" Visible="true" />
+                      <Field CanSymbolizeClassBreaks="false" CanSymbolizeUniqueValue="false" FocusField="false" Name="ASBUILT_NUMBER" Searchable="true" Visible="true" />
+                      <Field CanSymbolizeClassBreaks="false" CanSymbolizeUniqueValue="false" FocusField="false" Name="ACT_LENGTH" Searchable="true" Visible="true" />
+                      <Field CanSymbolizeClassBreaks="false" CanSymbolizeUniqueValue="false" FocusField="false" Name="ASBUILT_YEAR" Searchable="true" Visible="true" />
+                      <Field CanSymbolizeClassBreaks="false" CanSymbolizeUniqueValue="false" FocusField="false" Name="GIS_LINK" Searchable="true" Visible="true" />
+                      <Field CanSymbolizeClassBreaks="false" CanSymbolizeUniqueValue="false" FocusField="false" Name="OWNER" Searchable="true" Visible="true" />
+                      <Field CanSymbolizeClassBreaks="false" CanSymbolizeUniqueValue="false" FocusField="false" Name="SHAPE" Searchable="true" Visible="true" />
+                      <Field CanSymbolizeClassBreaks="false" CanSymbolizeUniqueValue="false" FocusField="false" Name="SHAPE.STLength()" Searchable="true" Visible="true" />
+                    </Fields>
+                    <ThemeSettings>
+                      <ThemeSetting ID="0" />
+                    </ThemeSettings>
+                  </Layer>
+                </SubLayers>
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </GroupLayer>
+            </SubLayers>
+            <ThemeSettings>
+              <ThemeSetting ID="0" Visible="true" />
+            </ThemeSettings>
+          </GroupLayer>
+          <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="SANITARY UTILITY" NativeID="18" Visible="false">
+            <SubLayers>
+              <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="false" IsCatalogLayer="false" Name="Inverts" NativeID="19" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </Layer>
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Sanitary Services" NativeID="21" Visible="true">
+                <SubLayers>
+                  <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Service Text" NativeID="22" Visible="true">
+                    <ThemeSettings>
+                      <ThemeSetting ID="0" />
+                    </ThemeSettings>
+                  </GroupLayer>
+                  <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Service Lines" NativeID="25" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                    <ThemeSettings>
+                      <ThemeSetting ID="0" />
+                    </ThemeSettings>
+                  </Layer>
+                </SubLayers>
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </GroupLayer>
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Main Offsets" NativeID="26" Visible="true">
+                <SubLayers>
+                  <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="false" IncludeInLegend="false" IsCatalogLayer="false" Name="Offset Text" NativeID="27" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                    <ThemeSettings>
+                      <ThemeSetting ID="0" />
+                    </ThemeSettings>
+                  </Layer>
+                  <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="false" IncludeInLegend="false" IsCatalogLayer="false" Name="Offset Lines" NativeID="29" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                    <ThemeSettings>
+                      <ThemeSetting ID="0" />
+                    </ThemeSettings>
+                  </Layer>
+                </SubLayers>
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </GroupLayer>
+              <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Inspection Chambers" NativeID="30" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Laterals" NativeID="31" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Sanitary Manholes" NativeID="32" Queryable="true" Searchable="true" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Sanitary Lift Stations" NativeID="33" Queryable="true" Searchable="true" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </Layer>
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Sanitary Mains" NativeID="34" Visible="true">
+                <SubLayers>
+                  <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Sanitary Main Sizes" NativeID="35" Visible="true">
+                    <ThemeSettings>
+                      <ThemeSetting ID="0" />
+                    </ThemeSettings>
+                  </GroupLayer>
+                  <Layer CanCopyFeature="true" FeatureDescription="{PIPE_DIAMETER} {MATERIAL} Sanitary Main" FeatureLabel="{PIPE_DIAMETER} {MATERIAL} Sanitary Main" FeatureLongDescription="{PIPE_DIAMETER} {MATERIAL} Sanitary Main" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Sanitary Mains" NativeID="41" Queryable="true" Searchable="true" ShowLabels="true" ShowMapTips="true" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                    <FeatureHyperlinks>
+                      <FeatureHyperlink EncodeUriReplacementValues="Automatic" Target="_blank" Text="{PIPE DIAMETER} {MATERIAL} Sanitary Main" ToolTip="View drawing for {PIPE DIAMETER} {MATERIAL} sanitary main" Uri="http://col-gis.col.local/SanitaryMains/{ASBUILT_NUM}.tif" />
+                    </FeatureHyperlinks>
+                    <ThemeSettings>
+                      <ThemeSetting ID="0" />
+                    </ThemeSettings>
+                  </Layer>
+                </SubLayers>
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </GroupLayer>
+            </SubLayers>
+            <ThemeSettings>
+              <ThemeSetting ID="0" Visible="true" />
+            </ThemeSettings>
+          </GroupLayer>
+          <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="DRAINAGE UTILITY" NativeID="42" Visible="false">
+            <SubLayers>
+              <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="false" IsCatalogLayer="false" Name="Inverts" NativeID="43" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </Layer>
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Drainage Services" NativeID="45" Visible="true">
+                <SubLayers>
+                  <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Service Text" NativeID="46" Visible="true">
+                    <ThemeSettings>
+                      <ThemeSetting ID="0" />
+                    </ThemeSettings>
+                  </GroupLayer>
+                  <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Service Lines" NativeID="49" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                    <ThemeSettings>
+                      <ThemeSetting ID="0" />
+                    </ThemeSettings>
+                  </Layer>
+                </SubLayers>
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </GroupLayer>
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Main Offsets" NativeID="50" Visible="true">
+                <SubLayers>
+                  <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="false" IncludeInLegend="false" IsCatalogLayer="false" Name="Offset Text" NativeID="51" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                    <ThemeSettings>
+                      <ThemeSetting ID="0" />
+                    </ThemeSettings>
+                  </Layer>
+                  <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="false" IncludeInLegend="false" IsCatalogLayer="false" Name="Offset Lines" NativeID="53" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                    <ThemeSettings>
+                      <ThemeSetting ID="0" />
+                    </ThemeSettings>
+                  </Layer>
+                </SubLayers>
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </GroupLayer>
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Test Stations" NativeID="54" Queryable="true" Searchable="true" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Laterals" NativeID="55" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" FeatureDescription="{NODE_TYPE}" FeatureLabel="{NODE_TYPE}" FeatureLongDescription="{NODE_TYPE}" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Drainage Nodes" NativeID="56" Queryable="true" Searchable="true" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </Layer>
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Drainage Mains" NativeID="57" Visible="true">
+                <SubLayers>
+                  <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Drainage Main Sizes" NativeID="58" Visible="true">
+                    <ThemeSettings>
+                      <ThemeSetting ID="0" />
+                    </ThemeSettings>
+                  </GroupLayer>
+                  <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Drainage Mains" NativeID="62" Queryable="true" Searchable="true" ShowLabels="true" ShowMapTips="true" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                    <FeatureHyperlinks>
+                      <FeatureHyperlink EncodeUriReplacementValues="Automatic" Target="_blank" Text="{DIAMETER} {MATERIAL} Drainage Main" ToolTip="View drawing for {DIAMETER} {MATERIAL} drainage main" Uri="http://col-gis.col.local/DrainageMains/{ASBUILT_NUMBER}.tif" />
+                    </FeatureHyperlinks>
+                    <ThemeSettings>
+                      <ThemeSetting ID="0" />
+                    </ThemeSettings>
+                  </Layer>
+                </SubLayers>
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </GroupLayer>
+            </SubLayers>
+            <ThemeSettings>
+              <ThemeSetting ID="0" Visible="true" />
+            </ThemeSettings>
+          </GroupLayer>
+          <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="OTHER UTILITY" NativeID="63" Visible="false">
+            <SubLayers>
+              <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="BC_Hydro_Meters" NativeID="64" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Service Box" NativeID="65" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" FeatureDescription="{NOTE1}" FeatureLabel="{NOTE1}" FeatureLongDescription="{NOTE1}" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Fibre Optic Line" NativeID="66" Queryable="true" Searchable="true" ShowLabels="true" ShowMapTips="true" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                <FeatureHyperlinks>
+                  <FeatureHyperlink EncodeUriReplacementValues="Automatic" Target="_blank" Text="Fibre Optic Line" ToolTip="View drawing for fibre optic line" Uri="http://col-gis.col.local/FibreOpticLines/{ASBUILT_NUM}.tif" />
+                </FeatureHyperlinks>
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Fortis IP Mains" NativeID="67" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Fortis IP 40m Buffer" NativeID="68" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </Layer>
+            </SubLayers>
+            <ThemeSettings>
+              <ThemeSetting ID="0" />
+            </ThemeSettings>
+          </GroupLayer>
+          <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="STREET LIGHTING" NativeID="69" Visible="false">
+            <SubLayers>
+              <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="false" IsCatalogLayer="false" Name="Bulb Wattage" NativeID="70" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </Layer>
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Street Light ID's" NativeID="71" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </GroupLayer>
+              <Layer CanCopyFeature="true" FeatureDescription="{TYPE} Streetlight" FeatureLabel="{TYPE} Streetlight" FeatureLongDescription="{TYPE} Streetlight" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Street Lights" NativeID="77" Queryable="true" Searchable="true" ShowLabels="true" ShowMapTips="true" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                </ThemeSettings>
+              </Layer>
+            </SubLayers>
+            <ThemeSettings>
+              <ThemeSetting ID="0" />
+            </ThemeSettings>
+          </GroupLayer>
+          <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="SURVEY" NativeID="78" Visible="false">
+            <SubLayers>
+              <Layer CanCopyFeature="true" FeatureDescription="Monument {TABLET_MARKING}" FeatureLabel="Monument {TABLET_MARKING}" FeatureLongDescription="Monument {TABLET_MARKING}" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Monuments" NativeID="79" Queryable="true" Searchable="true" ShowLabels="true" ShowMapTips="true" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+              <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="false" IsCatalogLayer="false" Name="Monument Lines" NativeID="80" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+            </SubLayers>
+          </GroupLayer>
+          <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="COMMUNITY SERVICES" NativeID="81" Visible="false">
+            <SubLayers>
+              <Layer CanCopyFeature="true" FeatureDescription="{NAME} School" FeatureLabel="{NAME} School" FeatureLongDescription="{NAME} School" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Schools" NativeID="82" Queryable="true" Searchable="true" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                <ThemeSettings>
+                  <ThemeSetting ID="1" />
+                  <ThemeSetting ID="2" />
+                  <ThemeSetting ID="3" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" FeatureDescription="{NAME}" FeatureLabel="{NAME}" FeatureLongDescription="{NAME}" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Facilities" NativeID="83" Queryable="true" Searchable="true" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                <ThemeSettings>
+                  <ThemeSetting ID="1" />
+                  <ThemeSetting ID="2" />
+                  <ThemeSetting ID="3" />
+                </ThemeSettings>
+              </Layer>
+            </SubLayers>
+            <ThemeSettings>
+              <ThemeSetting ID="1" />
+              <ThemeSetting ID="2" />
+              <ThemeSetting ID="3" />
+            </ThemeSettings>
+          </GroupLayer>
+          <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="TRANSPORTATION" NativeID="84" Visible="true">
+            <SubLayers>
+              <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Railway" NativeID="85" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                  <ThemeSetting ID="1" />
+                  <ThemeSetting ID="2" />
+                  <ThemeSetting ID="3" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="false" IsCatalogLayer="false" Name="Road Names" NativeID="86" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                  <ThemeSetting ID="1" />
+                  <ThemeSetting ID="2" />
+                  <ThemeSetting ID="3" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Bus Stops" NativeID="87" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="2" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" FeatureDescription="{NAME} - {CLASS}" FeatureLabel="{NAME} - {CLASS}" FeatureLongDescription="{NAME} - {CLASS}" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Road Classifications" NativeID="88" Queryable="true" Searchable="true" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="2" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" FeatureDescription="{NAME}" FeatureLabel="{NAME}" FeatureLongDescription="{NAME}" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Road Centrelines" NativeID="89" Queryable="true" Searchable="true" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+              <Layer CanCopyFeature="true" FeatureDescription="{MATERIAL} Sidewalk" FeatureLabel="{MATERIAL} Sidewalk" FeatureLongDescription="{MATERIAL} Sidewalk" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Sidewalks" NativeID="90" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+            </SubLayers>
+            <ThemeSettings>
+              <ThemeSetting ID="0" />
+              <ThemeSetting ID="1" />
+              <ThemeSetting ID="2" />
+              <ThemeSetting ID="3" />
+            </ThemeSettings>
+          </GroupLayer>
+          <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="TOPOGRAPHY" NativeID="91" Visible="true">
+            <SubLayers>
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Watercourses" NativeID="92" Queryable="true" Searchable="true" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                  <ThemeSetting ID="1" Visible="false" />
+                  <ThemeSetting ID="2" />
+                  <ThemeSetting ID="3" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="1:200 Year Flood Extent" NativeID="93" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                  <ThemeSetting ID="1" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="DEM Points" NativeID="94" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="true" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="1" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" FeatureDescription="{ELEVATION} Contour" FeatureLabel="{ELEVATION} Contour" FeatureLongDescription="{ELEVATION} Contour" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Contours (Index - 5m)" NativeID="95" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="1" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" FeatureDescription="{ELEVATION} Contour" FeatureLabel="{ELEVATION} Contour" FeatureLongDescription="{ELEVATION} Contour" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Contours (Intermediate - 1m)" NativeID="96" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="1" />
+                </ThemeSettings>
+              </Layer>
+            </SubLayers>
+            <ThemeSettings>
+              <ThemeSetting ID="0" />
+              <ThemeSetting ID="1" />
+              <ThemeSetting ID="2" />
+              <ThemeSetting ID="3" />
+            </ThemeSettings>
+          </GroupLayer>
+          <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="PROPERTY" NativeID="97" Visible="true">
+            <SubLayers>
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Civic Address (Black)" NativeID="98" Visible="true">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                  <ThemeSetting ID="1" />
+                  <ThemeSetting ID="2" />
+                  <ThemeSetting ID="3" Visible="false" />
+                </ThemeSettings>
+              </GroupLayer>
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Civic Address (White)" NativeID="101" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                  <ThemeSetting ID="1" />
+                  <ThemeSetting ID="2" />
+                  <ThemeSetting ID="3" Visible="true" />
+                </ThemeSettings>
+              </GroupLayer>
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Right-of-Way/Easement" NativeID="104" Visible="true">
+                <SubLayers>
+                  <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="false" IsCatalogLayer="false" Name="Right-of-Way Number" NativeID="105" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                    <ThemeSettings>
+                      <ThemeSetting ID="0" />
+                      <ThemeSetting ID="1" />
+                      <ThemeSetting ID="2" />
+                    </ThemeSettings>
+                  </Layer>
+                  <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Right-of-Way" NativeID="107" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                    <ThemeSettings>
+                      <ThemeSetting ID="0" />
+                      <ThemeSetting ID="1" />
+                      <ThemeSetting ID="2" />
+                    </ThemeSettings>
+                  </Layer>
+                </SubLayers>
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                  <ThemeSetting ID="1" />
+                  <ThemeSetting ID="2" />
+                </ThemeSettings>
+              </GroupLayer>
+              <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="false" IsCatalogLayer="false" Name="Folios" NativeID="108" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="2" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="false" IsCatalogLayer="false" Name="Legal Descriptions" NativeID="110" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="2" />
+                </ThemeSettings>
+              </Layer>
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Lot Dimensions" NativeID="112" Visible="true">
+                <SubLayers>
+                  <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="false" IsCatalogLayer="false" Name="Lot Lines" NativeID="113" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                    <ThemeSettings>
+                      <ThemeSetting ID="2" />
+                    </ThemeSettings>
+                  </Layer>
+                  <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="false" IsCatalogLayer="false" Name="Road Allowance" NativeID="114" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                    <ThemeSettings>
+                      <ThemeSetting ID="2" />
+                    </ThemeSettings>
+                  </Layer>
+                </SubLayers>
+                <ThemeSettings>
+                  <ThemeSetting ID="2" />
+                </ThemeSettings>
+              </GroupLayer>
+              <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="City Boundary" NativeID="115" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                  <ThemeSetting ID="1" />
+                  <ThemeSetting ID="2" />
+                  <ThemeSetting ID="3" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Buildings" NativeID="116" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                  <ThemeSetting ID="1" />
+                  <ThemeSetting ID="2" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" DisplayName="Property" FeatureDescription="Property information for {LAND_LEGAL_DATA.HOUSE_NUM} {LAND_LEGAL_DATA.STREET} " FeatureLabel="Property: {LAND_LEGAL_DATA.HOUSE_NUM} {LAND_LEGAL_DATA.STREET} " FeatureLongDescription="Property information for {LAND_LEGAL_DATA.HOUSE_NUM} {LAND_LEGAL_DATA.STREET} " Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Property" NativeID="117" Queryable="true" Searchable="true" ShowLabels="true" ShowMapTips="true" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                <DataLinks>
+                  <DataLink Command="SELECT CONVERT(INTEGER,HOUSE) AS HOUSE_NUM, STREET, UNIT, CITY, PROVINCE, POSTAL_CODE, PLAN_NUMBER, LOT, PID, FOLIO, LEGAL_TYPE,  PROPERTY_NUMBER, GISLINK, LEGAL_ID,&#xD;&#xA;'http://col-gis.col.local/LegalPlans/' + PLAN_NUMBER + '.tif' AS LEGAL_PLAN &#xD;&#xA;FROM TempestLive.dbo.LAND_LEGAL, TempestLive.dbo.IHL_PARCEL_TEMPEST_JOIN WHERE TempestLive.dbo.LAND_LEGAL.GISLINK = TempestLive.dbo.IHL_PARCEL_TEMPEST_JOIN.TEMPEST_ID &#xD;&#xA;and TempestLive.dbo.IHL_PARCEL_TEMPEST_JOIN.PARCEL_ID = @PIDfromLayer ORDER BY (CASE WHEN LEGAL_TYPE = 'LAND' THEN 0 WHEN LEGAL_TYPE = 'STRATA' THEN 1 WHEN LEGAL_TYPE = 'ALIAS' THEN 2 ELSE 3 END), UNIT" DataConnectionID="0" DisplayName="Property Details" ErrorAction="LogDebug" ID="LAND_LEGAL_DATA" IsOneToOne="false" Visible="true">
+                    <Parameters>
+                      <Parameter DefaultValue="1" FeatureField="PARCEL_ID" Name="PIDfromLayer" />
+                    </Parameters>
+                  </DataLink>
+                </DataLinks>
+                <FeatureHyperlinks>
+                  <FeatureHyperlink EncodeUriReplacementValues="Automatic" Target="_blank" Text="Legal Plan for Plan:{LAND_LEGAL_DATA.PLAN_NUMBER} Lot:{LAND_LEGAL_DATA.LOT}" ToolTip="View Legal Plan for {LAND_LEGAL_DATA.PLAN_NUMBER} {LAND_LEGAL_DATA.LOT}" Uri="http://col-gis.col.local/LegalPlans/{LAND_LEGAL_DATA.PLAN_NUMBER}.tif" />
+                  <FeatureHyperlink EncodeUriReplacementValues="Automatic" Target="_blank" Text="Service Card for {LAND_LEGAL_DATA.HOUSE_NUM} {LAND_LEGAL_DATA.STREET}" ToolTip="View Service Card for {LAND_LEGAL_DATA.HOUSE_NUM} {LAND_LEGAL_DATA.STREET}" Uri="http://col-gis.col.local/ServiceCards/{PARCEL_ID}.pdf" />
+                </FeatureHyperlinks>
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                  <ThemeSetting ID="1" />
+                  <ThemeSetting ID="2" />
+                  <ThemeSetting ID="3" />
+                </ThemeSettings>
+              </Layer>
+            </SubLayers>
+            <ThemeSettings>
+              <ThemeSetting ID="0" />
+              <ThemeSetting ID="1" />
+              <ThemeSetting ID="2" />
+              <ThemeSetting ID="3" />
+            </ThemeSettings>
+          </GroupLayer>
+          <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="PARKS &amp; ENVIRONMENT" NativeID="118" Visible="false">
+            <SubLayers>
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Trails" NativeID="119" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="1" Visible="true" />
+                  <ThemeSetting ID="2" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Watercourse Classifications" NativeID="120" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="true" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="1" Visible="true" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Environmentally Sensitive Areas" NativeID="121" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="true" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="1" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" FeatureDescription="{NAME}" FeatureLabel="{NAME}" FeatureLongDescription="{NAME}" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Parks and Public Space" NativeID="122" Queryable="true" Searchable="true" ShowLabels="true" ShowMapTips="true" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                <ThemeSettings>
+                  <ThemeSetting ID="1" />
+                  <ThemeSetting ID="2" />
+                </ThemeSettings>
+              </Layer>
+            </SubLayers>
+            <ThemeSettings>
+              <ThemeSetting ID="1" Visible="true" />
+              <ThemeSetting ID="2" />
+            </ThemeSettings>
+          </GroupLayer>
+          <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="PLANNING AND LANDUSE" NativeID="123" Visible="false">
+            <SubLayers>
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Secondary Suites" NativeID="124" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="2" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Land Use Contracts" NativeID="125" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="2" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Agricultural Land Reserve" NativeID="126" Queryable="false" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="2" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" FeatureDescription="{ZONING} {CD_NMBR} {BYLAW_950_NMBR}" FeatureLabel="{ZONING} {CD_NMBR} {BYLAW_950_NMBR}" FeatureLongDescription="{ZONING} {CD_NMBR} {BYLAW_950_NMBR}" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Zoning Designations" NativeID="127" Queryable="true" Searchable="true" ShowLabels="true" ShowMapTips="true" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                <ThemeSettings>
+                  <ThemeSetting ID="2" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" FeatureDescription="{OCP_LANDUSE}" FeatureLabel="{OCP_LANDUSE}" FeatureLongDescription="{OCP_LANDUSE}" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="OCP Land Use Designation" NativeID="128" Queryable="true" Searchable="true" ShowLabels="true" ShowMapTips="true" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+                <ThemeSettings>
+                  <ThemeSetting ID="2" />
+                </ThemeSettings>
+              </Layer>
+            </SubLayers>
+            <ThemeSettings>
+              <ThemeSetting ID="2" Visible="true" />
+            </ThemeSettings>
+          </GroupLayer>
+        </Layers>
+        <ThemeSettings>
+          <ThemeSetting ID="0" />
+          <ThemeSetting ID="1" />
+          <ThemeSetting ID="2" />
+          <ThemeSetting ID="3" />
+        </ThemeSettings>
+      </MapService>
+      <MapService ConnectionString="url=http://col-gis.col.local/arcgis/rest/services/Maps/2012Imagery/MapServer" DefaultAllowSymbolization="true" DisplayName="2012 Imagery" FailureAction="Warn" Function="Operational" ID="1" IncludeInLayerList="true" IsExpanded="true" Opacity="1" OverrideTemporalSettings="false" PasswordEncrypted="false" ProviderInvariantName="Geocortex.Gis.Services.ArcGisServer.Rest" QueryProviderName="Default" SearchNonTextFields="true" SupportedImageHeight="0" SupportedImageWidth="0" UseHttpAuthentication="false" Visible="false">
+        <Layers>
+          <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="IMAGERY" NativeID="0" Visible="true">
+            <SubLayers>
+              <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="false" IsCatalogLayer="false" Name="2012 Imagery" NativeID="1" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="false" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                  <ThemeSetting ID="1" />
+                  <ThemeSetting ID="2" />
+                  <ThemeSetting ID="3" />
+                </ThemeSettings>
+              </Layer>
+            </SubLayers>
+            <ThemeSettings>
+              <ThemeSetting ID="0" />
+              <ThemeSetting ID="1" />
+              <ThemeSetting ID="2" />
+              <ThemeSetting ID="3" />
+            </ThemeSettings>
+          </GroupLayer>
+        </Layers>
+        <ThemeSettings>
+          <ThemeSetting ID="0" />
+          <ThemeSetting ID="1" />
+          <ThemeSetting ID="2" />
+          <ThemeSetting ID="3" Visible="true" />
+        </ThemeSettings>
+      </MapService>
+      <MapService ConnectionString="url=http://col-gis.col.local/arcgis/rest/services/Maps/Imagery/MapServer" DefaultAllowSymbolization="true" DisplayName="Other Imagery" FailureAction="Warn" Function="Operational" ID="2" IncludeInLayerList="true" IsExpanded="true" Opacity="1" OverrideTemporalSettings="false" PasswordEncrypted="false" ProviderInvariantName="Geocortex.Gis.Services.ArcGisServer.Rest" QueryProviderName="Default" SearchNonTextFields="true" SupportedImageHeight="0" SupportedImageWidth="0" UseHttpAuthentication="false" Visible="false">
+        <Layers>
+          <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="false" IsCatalogLayer="false" Name="2010 Imagery" NativeID="0" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="false" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+            <ThemeSettings>
+              <ThemeSetting ID="0" />
+              <ThemeSetting ID="1" />
+              <ThemeSetting ID="2" />
+              <ThemeSetting ID="3" />
+            </ThemeSettings>
+          </Layer>
+          <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="false" IsCatalogLayer="false" Name="2007 Imagery" NativeID="1" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="false" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+            <ThemeSettings>
+              <ThemeSetting ID="0" />
+              <ThemeSetting ID="1" />
+              <ThemeSetting ID="2" />
+              <ThemeSetting ID="3" />
+            </ThemeSettings>
+          </Layer>
+          <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="false" IsCatalogLayer="false" Name="2004 Imagery" NativeID="2" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="false" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+            <ThemeSettings>
+              <ThemeSetting ID="0" />
+              <ThemeSetting ID="1" />
+              <ThemeSetting ID="2" />
+              <ThemeSetting ID="3" />
+            </ThemeSettings>
+          </Layer>
+          <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="2001 Imagery" NativeID="3" Visible="false">
+            <SubLayers>
+              <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="false" IsCatalogLayer="false" Name="FLC_S.sid" NativeID="4" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="false" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                  <ThemeSetting ID="1" />
+                  <ThemeSetting ID="2" />
+                  <ThemeSetting ID="3" />
+                </ThemeSettings>
+              </Layer>
+              <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="false" IsCatalogLayer="false" Name="FLC_N.sid" NativeID="5" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="false" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true">
+                <ThemeSettings>
+                  <ThemeSetting ID="0" />
+                  <ThemeSetting ID="1" />
+                  <ThemeSetting ID="2" />
+                  <ThemeSetting ID="3" />
+                </ThemeSettings>
+              </Layer>
+            </SubLayers>
+            <ThemeSettings>
+              <ThemeSetting ID="0" />
+              <ThemeSetting ID="1" />
+              <ThemeSetting ID="2" />
+              <ThemeSetting ID="3" />
+            </ThemeSettings>
+          </GroupLayer>
+          <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="false" IsCatalogLayer="false" Name="1995 Imagery" NativeID="6" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="false" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false">
+            <ThemeSettings>
+              <ThemeSetting ID="0" />
+              <ThemeSetting ID="1" />
+              <ThemeSetting ID="2" />
+              <ThemeSetting ID="3" />
+            </ThemeSettings>
+          </Layer>
+        </Layers>
+        <ThemeSettings>
+          <ThemeSetting ID="0" />
+          <ThemeSetting ID="1" />
+          <ThemeSetting ID="2" />
+          <ThemeSetting ID="3" />
+        </ThemeSettings>
+      </MapService>
+    </MapServices>
+  </Map>
+  <NamedExtents>
+    <NamedExtent DisplayName="City Hall/Library" Extent="524906.636640875,5438967.79454261,525139.563109202,5439163.94314751" ID="0" />
+    <NamedExtent DisplayName="City Park/Al Anderson Memorial Pool" Extent="524992.728202151,5437412.54525115,525924.434075453,5438197.13967077" ID="1" />
+    <NamedExtent DisplayName="Douglas Park" Extent="525078.815578065,5438681.19402557,525544.668514716,5439073.49123538" ID="2" />
+    <NamedExtent DisplayName="Operations Centre" Extent="523633.162969238,5439157.85979053,523937.676934082,5439414.29260303" ID="3" />
+    <NamedExtent DisplayName="Fire Hall" Extent="524575.152878906,5439366.61212695,524879.66684375,5439623.04493945" ID="4" />
+  </NamedExtents>
+  <OverviewMap FullExtent="523318.743489648,5437121.92094649,526536.083257661,5439831.2596985" InitialExtent="523024.803,5436454.497,526580.671,5440557.422">
+    <MapServices>
+      <MapService ConnectionString="url=http://col-gis.col.local/arcgis/rest/services/Maps/Internal/MapServer" DefaultAllowSymbolization="true" DisplayName="Maps/Internal" Function="Operational" ID="2" IncludeInLayerList="true" IsExpanded="true" Opacity="1" OverrideTemporalSettings="false" PasswordEncrypted="false" ProviderInvariantName="Geocortex.Gis.Services.ArcGisServer.Rest" SearchNonTextFields="true" SupportedImageHeight="0" SupportedImageWidth="0" UseHttpAuthentication="false" Visible="true">
+        <Layers>
+          <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="WATER UTILITY" NativeID="0" Visible="false">
+            <SubLayers>
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Water Services" NativeID="1" Visible="true">
+                <SubLayers>
+                  <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Service Text" NativeID="2" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+                  <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Service Lines" NativeID="4" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+                </SubLayers>
+              </GroupLayer>
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Main Offsets" NativeID="5" Visible="true">
+                <SubLayers>
+                  <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Offset Text" NativeID="6" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+                  <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Offset Lines" NativeID="8" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+                </SubLayers>
+              </GroupLayer>
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Test Stations" NativeID="9" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Reservoir" NativeID="10" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Fire Hydrants" NativeID="11" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Water Nodes" NativeID="12" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Pressure Zone" NativeID="13" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Water Mains" NativeID="14" Visible="true">
+                <SubLayers>
+                  <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Water Main Sizes" NativeID="15" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+                  <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Water Mains" NativeID="17" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+                </SubLayers>
+              </GroupLayer>
+            </SubLayers>
+          </GroupLayer>
+          <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="SANITARY UTILITY" NativeID="18" Visible="false">
+            <SubLayers>
+              <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Inverts" NativeID="19" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Sanitary Services" NativeID="21" Visible="true">
+                <SubLayers>
+                  <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Service Text" NativeID="22" Visible="true" />
+                  <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Service Lines" NativeID="25" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+                </SubLayers>
+              </GroupLayer>
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Main Offsets" NativeID="26" Visible="true">
+                <SubLayers>
+                  <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Offset Text" NativeID="27" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+                  <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Offset Lines" NativeID="29" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+                </SubLayers>
+              </GroupLayer>
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Inspection Chambers" NativeID="30" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Laterals" NativeID="31" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Sanitary Manholes" NativeID="32" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Sanitary Lift Stations" NativeID="33" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Sanitary Mains" NativeID="34" Visible="true">
+                <SubLayers>
+                  <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Sanitary Main Sizes" NativeID="35" Visible="true" />
+                  <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Sanitary Mains" NativeID="41" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+                </SubLayers>
+              </GroupLayer>
+            </SubLayers>
+          </GroupLayer>
+          <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="DRAINAGE UTILITY" NativeID="42" Visible="false">
+            <SubLayers>
+              <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Inverts" NativeID="43" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Drainage Services" NativeID="45" Visible="true">
+                <SubLayers>
+                  <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Service Text" NativeID="46" Visible="true" />
+                  <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Service Lines" NativeID="49" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+                </SubLayers>
+              </GroupLayer>
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Main Offsets" NativeID="50" Visible="true">
+                <SubLayers>
+                  <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Offset Text" NativeID="51" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+                  <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Offset Lines" NativeID="53" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+                </SubLayers>
+              </GroupLayer>
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Test Stations" NativeID="54" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Laterals" NativeID="55" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Drainage Nodes" NativeID="56" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Drainage Mains" NativeID="57" Visible="true">
+                <SubLayers>
+                  <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Drainage Main Sizes" NativeID="58" Visible="true" />
+                  <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Drainage Mains" NativeID="62" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+                </SubLayers>
+              </GroupLayer>
+            </SubLayers>
+          </GroupLayer>
+          <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="OTHER UTILITY" NativeID="63" Visible="false">
+            <SubLayers>
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="BC_Hydro_Meters" NativeID="64" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Service Box" NativeID="65" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Fibre Optic Line" NativeID="66" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Fortis IP Mains" NativeID="67" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Fortis IP 40m Buffer" NativeID="68" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+            </SubLayers>
+          </GroupLayer>
+          <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="STREET LIGHTING" NativeID="69" Visible="false">
+            <SubLayers>
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Bulb Wattage" NativeID="70" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Street Light ID's" NativeID="71" Visible="false" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Street Lights" NativeID="77" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+            </SubLayers>
+          </GroupLayer>
+          <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="SURVEY" NativeID="78" Visible="false">
+            <SubLayers>
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Monuments" NativeID="79" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Monument Lines" NativeID="80" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+            </SubLayers>
+          </GroupLayer>
+          <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="COMMUNITY SERVICES" NativeID="81" Visible="false">
+            <SubLayers>
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Schools" NativeID="82" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Facilities" NativeID="83" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+            </SubLayers>
+          </GroupLayer>
+          <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="TRANSPORTATION" NativeID="84" Visible="true">
+            <SubLayers>
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Railway" NativeID="85" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Road Names" NativeID="86" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Bus Stops" NativeID="87" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Road Classifications" NativeID="88" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Road Centrelines" NativeID="89" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Sidewalks" NativeID="90" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+            </SubLayers>
+          </GroupLayer>
+          <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="TOPOGRAPHY" NativeID="91" Visible="true">
+            <SubLayers>
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Watercourses" NativeID="92" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="1:200 Year Flood Extent" NativeID="93" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="DEM Points" NativeID="94" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Contours (Index - 5m)" NativeID="95" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Contours (Intermediate - 1m)" NativeID="96" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+            </SubLayers>
+          </GroupLayer>
+          <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="PROPERTY" NativeID="97" Visible="true">
+            <SubLayers>
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Civic Address (Black)" NativeID="98" Visible="true" />
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Civic Address (White)" NativeID="101" Visible="false" />
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Right-of-Way/Easement" NativeID="104" Visible="true">
+                <SubLayers>
+                  <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Right-of-Way Number" NativeID="105" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+                  <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Right-of-Way" NativeID="107" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+                </SubLayers>
+              </GroupLayer>
+              <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Folios" NativeID="108" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+              <Layer CanCopyFeature="true" Identifiable="false" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Legal Descriptions" NativeID="110" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+              <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="Lot Dimensions" NativeID="112" Visible="true">
+                <SubLayers>
+                  <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Lot Lines" NativeID="113" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+                  <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Road Allowance" NativeID="114" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+                </SubLayers>
+              </GroupLayer>
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="City Boundary" NativeID="115" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Buildings" NativeID="116" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Property" NativeID="117" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+            </SubLayers>
+          </GroupLayer>
+          <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="PARKS &amp; ENVIRONMENT" NativeID="118" Visible="false">
+            <SubLayers>
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Trails" NativeID="119" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Watercourse Classifications" NativeID="120" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Environmentally Sensitive Areas" NativeID="121" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Parks and Public Space" NativeID="122" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+            </SubLayers>
+          </GroupLayer>
+          <GroupLayer IncludeInLayerList="true" IsCatalogLayer="false" IsExpanded="false" Name="PLANNING AND LANDUSE" NativeID="123" Visible="false">
+            <SubLayers>
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Secondary Suites" NativeID="124" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Land Use Contracts" NativeID="125" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Agricultural Land Reserve" NativeID="126" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="Zoning Designations" NativeID="127" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="true" />
+              <Layer CanCopyFeature="true" Identifiable="true" IncludeInLayerList="true" IncludeInLegend="true" IsCatalogLayer="false" Name="OCP Land Use Designation" NativeID="128" Queryable="true" Searchable="false" ShowLabels="true" ShowMapTips="false" Snappable="true" SnappingEnabled="false" UnconfiguredFieldsCanSymbolizeClassBreaks="true" UnconfiguredFieldsCanSymbolizeUniqueValue="true" UnconfiguredFieldsSearchable="true" UnconfiguredFieldsVisible="true" Visible="false" />
+            </SubLayers>
+          </GroupLayer>
+        </Layers>
+      </MapService>
+    </MapServices>
+  </OverviewMap>
+  <PrintTemplates>
+    <PrintTemplate Description="Letter - 8.5&quot; x 11&quot; Landscape" DisplayName="8.5&quot; x 11&quot; Landscape" ID="0" MaximumResolution="300" ScaleBarUnit="Meters" TemplateUri="{RootUri}/Resources/PrintTemplates/PrintTemplate_85x11_Landscape.rpx" Visible="true">
+      <PrintJobSettings Enabled="false" MaxWorkers="2" OutputFileTimeout="168" PreserveIntermediateFiles="false" TileSize="1024" />
+      <SupportedMapScales>
+        <ScaleItem DisplayName="1:250" Scale="250" />
+        <ScaleItem DisplayName="1:500" Scale="500" />
+        <ScaleItem DisplayName="1:1,000" Scale="1000" />
+        <ScaleItem DisplayName="1:2,000" Scale="2000" />
+        <ScaleItem DisplayName="1:4,000" Scale="4000" />
+        <ScaleItem DisplayName="1:8,000" Scale="8000" />
+        <ScaleItem DisplayName="1:16,000" Scale="16000" />
+        <ScaleItem DisplayName="1:32,000" Scale="32000" />
+      </SupportedMapScales>
+      <SupportedOutputFormats>
+        <Pdf />
+        <Jpeg />
+      </SupportedOutputFormats>
+      <SupportedResolutions>
+        <Resolution DisplayName="Standard - 150 DPI" Dpi="150" />
+        <Resolution DisplayName="High - 300 DPI" Dpi="300" />
+      </SupportedResolutions>
+      <TextFields>
+        <TextField DataFieldName="_Title" DisplayName="Title Test" Editable="true" MultiLine="false" Value="User Generated Map" />
+        <TextField DataFieldName="_Notes" DisplayName="Notes" Editable="true" MultiLine="true" />
+      </TextFields>
+    </PrintTemplate>
+    <PrintTemplate Description="Tabloid - 11&quot; x 17&quot; Landscape" DisplayName="11&quot; x 17&quot; Landscape" ID="1" MaximumResolution="300" ScaleBarUnit="Meters" TemplateUri="{RootUri}/Resources/PrintTemplates/PrintTemplate_11x17_Landscape.rpx" Visible="true">
+      <SupportedMapScales>
+        <ScaleItem DisplayName="1:250" Scale="250" />
+        <ScaleItem DisplayName="1:500" Scale="500" />
+        <ScaleItem DisplayName="1:1,000" Scale="1000" />
+        <ScaleItem DisplayName="1:2,000" Scale="2000" />
+        <ScaleItem DisplayName="1:4,000" Scale="4000" />
+        <ScaleItem DisplayName="1:8,000" Scale="8000" />
+        <ScaleItem DisplayName="1:16,000" Scale="16000" />
+        <ScaleItem DisplayName="1:32,000" Scale="32000" />
+      </SupportedMapScales>
+      <SupportedOutputFormats>
+        <Pdf />
+        <Jpeg />
+      </SupportedOutputFormats>
+      <SupportedResolutions>
+        <Resolution DisplayName="Standard - 150 DPI" Dpi="150" />
+        <Resolution DisplayName="High - 300 DPI" Dpi="300" />
+      </SupportedResolutions>
+      <TextFields>
+        <TextField DataFieldName="_Title" DisplayName="Title" Editable="true" MultiLine="false" Value="User Generated Map" />
+        <TextField DataFieldName="_Notes" DisplayName="Notes" Editable="true" MultiLine="true" />
+      </TextFields>
+    </PrintTemplate>
+  </PrintTemplates>
+  <SearchTables>
+    <SearchTable Command="SELECT LEGAL_ID, PROPERTY_NUMBER, FOLIO, PID, PLAN_NUMBER, LOT, GISLINK, STREET, HOUSE, UNIT, CITY, PROVINCE, POSTAL_CODE FROM TempestLive.dbo.LAND_LEGAL " DataConnectionID="0" DisplayName="LAND_LEGAL" ID="LAND_LEGAL" MaximumRecords="1000" />
+    <SearchTable Command="SELECT PARCEL_ID, TEMPEST_ID FROM TempestLive.dbo.IHL_PARCEL_TEMPEST_JOIN " DataConnectionID="0" DisplayName="TEMPEST_JOIN" ID="TEMPEST_JOIN" MaximumRecords="1000" />
+  </SearchTables>
+  <Viewers>
+    <Viewer DisplayName="Silverlight" Hidden="false" ID="Silverlight" Path="{SitePath}\Viewers\Silverlight" TemplateID="SilverlightViewer_1_9" />
+  </Viewers>
+  <Workflows>
+    <Workflow DisplayName="TempestToEssentials" ID="TempestToEssentials" Uri="{RootUri}/Resources/TempestConnector/Workflows/TempestToEssentials.xaml" />
+    <Workflow DisplayName="EssentialsToTempest" ID="EssentialsToTempest" Uri="{RootUri}/Resources/TempestConnector/Workflows/EssentialsToTempest.xaml" />
+    <Workflow DisplayName="SearchParcelsAddr" ID="SearchParcelsAddr" Uri="{RootUri}/Resources/Workflows/CoLSearchProperty.xaml" />
+    <Workflow DisplayName="TNSearchStreetv2" ID="TNSearchStreetv2" Uri="{RootUri}/Resources/Workflows/TNSearchStreetv2.xaml" />
+  </Workflows>
+</Site>
